@@ -1,0 +1,37 @@
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+int main()
+{
+char opt;
+double a,b;
+cout<<"IT'S A CALCULATOR"<<endl;
+cout<<"Enter a NUMBER 01:";
+cin>>a;
+cout<<"Enter a NUMBER 02:";
+cin>>b;
+cout<<"Enter the OPERATION(+,-,*,/):";
+cin>>opt;
+
+switch(opt)
+{
+case '+':
+cout<<a<<"+"<<b<<"="<<a+b;
+break;
+case '-':
+cout<<a<<"-"<<b<<"="<<a-b;
+break;
+case '*':
+cout<<a<<"*"<<b<<"="<<a*b;
+break;
+case '/':
+if(b!=0)
+cout<<a<<"/"<<b<<"="<<a/b;
+else
+cout<<"DIVISION BY ZERO IS NOT POSSIBLE";
+break;
+default:
+cout<<"Invalid Operation!";
+}
+return 0;
+}
